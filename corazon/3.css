@@ -1,341 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    font-family:cursive;
+}
+
+main{
+    display:flex;
+    flex-wrap:wrap;
+    min-height:100vh;
+}
+
+/* TEXTO */
+
 #lo{
-background: linear-gradient(to left, red, orange, salmon);
-margin-left: 1000px;
-position: absolute;
-width: 340px;
-height: 960px;
-font-family: cursive;
-font-size: 30px;
-text-align: justify;
+    flex:1;
+    min-width:320px;
+    padding:28px;
+    background:linear-gradient(to left, red, orange, salmon);
+    font-size:22px;
+    text-align:justify;
+    line-height:1.7;
 }
-#abeja{
-	position: absolute;
-	animation-name: volar;
-	animation-duration: 7s;
-	animation-iteration-count: infinite;
-}
-#conteiner{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-top: 590px;
-}
-#conteiner2{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-left:15%;
-	margin-top: 590px;
-}
-#conteiner3{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-left:30%;
-	margin-top: 590px;
-}
-#conteiner4{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-left:50%;
-	margin-top: 590px;
-}
-#conteiner5{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-left:64%;
-	margin-top: 590px;
-}
-#conteiner6{
-	position: absolute;
-	width: 170px;
-	height: 170px;
-	margin-left:82%;
-	margin-top: 590px;
-}
+
+/* ESCENA */
+
 #todo{
-	background: linear-gradient(to top, blue, skyblue);
-	position: absolute;
-	width: 1000px;
-	height: 960px;
+    flex:2;
+    min-width:320px;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(to top, blue, skyblue);
 }
+
+/* SOL */
+
 #sol{
-	width: 200px;
-	height: 200px;
-	background: yellow;
-	animation-name: formar;
-	animation-duration: 10s;
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	animation-iteration-count: infinite;
+    width:180px;
+    height:180px;
+    background:yellow;
+    border-radius:50%;
+    position:absolute;
+    top:20px;
+    left:20px;
+    animation:formar 10s infinite;
 }
+
+/* FLOR GRANDE */
+
+#conteiner7{
+    position:absolute;
+    width:420px;
+    height:420px;
+    left:50%;
+    top:50%;
+    margin-left:-340px;
+    margin-top:-300px;
+    transform:scale(1.9);
+    transform-origin:top left;
+}
+
+/* MINI FLORES */
+
+#conteiner,#conteiner2,#conteiner3,#conteiner4,#conteiner5,#conteiner6{
+    position:absolute;
+    width:170px;
+    height:170px;
+    bottom:0;
+}
+
+#conteiner{left:1%;}
+#conteiner2{left:15%;}
+#conteiner3{left:30%;}
+#conteiner4{left:50%;}
+#conteiner5{left:65%;}
+#conteiner6{left:82%;}
+
+/* ABEJA */
+
+#abeja{
+    position:absolute;
+    width:95px;
+    z-index:10;
+    animation:volar 10s linear infinite;
+}
+
+#abeja img{
+    width:100%;
+}
+
+
 #extra{
-	width: 15%;
-	height: 50%;
-	position: absolute;
-	top: 6%;
-	left: 40%;
-	border-top-right-radius: 130%;
-	border-top-left-radius: 130%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	animation-name: extra;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	animation-delay: 2s;
+    width:15%;
+    height:50%;
+    position:absolute;
+    top:6%;
+    left:40%;
+    border-radius:150%;
+    animation:extra 3s linear infinite;
+    animation-delay:2s;
+    z-index:0;
 }
-@keyframes extra{
-from{
-	transform: rotate(0deg);
-}to{
-	transform: rotate(360deg);
-}
-0%{
-	background: transparent;
-}
-100%{
-	background: linear-gradient(to top, yellow, orange, red, orange,yellow);
-}
-}
+
 #extra2{
-	width: 15%;
-	height: 50%;
-	position: absolute;
-	top: 6%;
-	left: 40%;
-	border-top-right-radius: 100%;
-	border-top-left-radius: 100%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	animation-name: extra2;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-animation-direction: reverse;
-animation-delay: 2s;
-}
-@keyframes extra2{
-	from{transform: rotate(0deg);}
-to{transform: rotate(360deg); }
-0%{
-	background: transparent;
-}
-100%{
-	background: linear-gradient(to top, yellow, orange, red, orange,yellow);
-}
+    width:15%;
+    height:50%;
+    position:absolute;
+    top:6%;
+    left:40%;
+    border-radius:150%;
+    animation:extra2 4s linear infinite reverse;
+    animation-delay:2s;
+    z-index:0;
 }
 
 #centro{
-	background: brown;
-	width: 13%;
-	height: 13%;
-	top: 23%;
-	left: 41%;
-	position: absolute;
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	z-index: 1;
-	animation-name: cen;
-	animation-duration: 2s;
+background:brown;
+width:13%;
+height:13%;
+top:23%;
+left:41%;
+position:absolute;
+border-radius:50%;
+z-index:1;
+animation:cen 2s;
 }
+
+#petalo1,#petalo2,#petalo3,#petalo4,#petalo5,#petalo6,#petalo7,#petalo8{
+position:absolute;
+z-index:1;
+}
+
 #petalo1{
-	width: 27%;
-	height: 15%;
-	background: linear-gradient(to top, red, orange, yellow);
-	position: absolute;
-	top: 14%;
-	left: 22%;
-	border-top-right-radius: 130%;
-	border-top-left-radius: 40%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 15%;
-	z-index: 1;
-	animation-name: pe1;
-	animation-duration: 3s;
+width:27%; height:15%; top:14%; left:25%;
+background:linear-gradient(to top,red,orange,yellow);
+border-radius:130% 40% 15% 150%;
+animation:pe1 3s;
+transform: rotate(35deg);
 }
-#petalo5{
-	width: 13%;
-	height: 27%;
-	background:linear-gradient(to top, red, orange, yellow);
-	position: absolute;
-	top: 1%;
-	left: 41%;
-	border-top-right-radius: 150%;
-	border-top-left-radius: 150%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	z-index: 1;
-	animation-name: pe5;
-		animation-duration: 3.70s;
-	}
+
 #petalo2{
-	width: 27%;
-	height: 15%;
-	background: linear-gradient(to top, red, orange, yellow);
-	position: absolute;
-	top: 14%;
-	left: 45%;
-	border-top-right-radius: 40%;
-	border-top-left-radius: 130%;
-	border-bottom-left-radius:15%;
-	border-bottom-right-radius: 150%;
-	z-index: 1;
-	animation-name: pe2;
-	animation-duration: 4s;
+width:27%; height:15%; top:14%; left:45%;
+background:linear-gradient(to top,red,orange,yellow);
+border-radius:40% 130% 150% 15%;
+animation:pe2 4s;
+transform: rotate(-35deg);
 }
-#petalo8{
-	width: 24%;
-	height: 12%;
-	background: linear-gradient(to left, yellow, orange, red );
-	position: absolute;
-	top: 25%;
-	left: 47%;
-	border-top-right-radius: 150%;
-	border-top-left-radius: 150%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	z-index: 1;
-	animation-name: pe8;
-	animation-duration: 4.70s;
-}
+
 #petalo3{
-	width: 27%;
-	height: 15%;
-	background:linear-gradient(to top, yellow, orange, red);
-	position: absolute;
-	top: 31%;
-	left: 45%;
-	border-top-right-radius: 130%;
-	border-top-left-radius: 35%;
-	border-bottom-left-radius:130%;
-	border-bottom-right-radius: 20%;
-	z-index: 1;animation-name: pe3;
-		animation-duration: 5s;
+width:27%; height:15%; top:31%; left:42%;
+background:linear-gradient(to top,yellow,orange,red);
+border-radius:130% 130% 200% 130%;
+animation:pe3 5s;
+transform: rotate(35deg);
 }
-#petalo6{
-	width: 13%;
-	height: 27%;
-	background: linear-gradient(to top, yellow, orange, red);
-	position: absolute;
-	top: 30%;
-	left: 41%;
-	border-top-right-radius: 150%;
-	border-top-left-radius: 150%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	z-index: 1;
-	animation-name: pe6;
-		animation-duration: 5.70s;
-}
+
 #petalo4{
-	width: 27%;
-	height: 15%;
-	background:linear-gradient(to top, yellow, orange, red);
-	position: absolute;
-	top: 31%;
-	left: 22%;
-	border-top-right-radius: 35%;
-	border-top-left-radius: 130%;
-	border-bottom-left-radius:20%;
-	border-bottom-right-radius: 130%;
-	z-index: 1;
-	animation-name: pe4;
-	animation-duration: 6s;
+width:27%; height:15%; top:31%; left:25%;
+background:linear-gradient(to top,yellow,orange,red);
+border-radius:200% 130% 130% 200%;
+animation:pe4 6s;
+transform: rotate(-35deg);
 }
+
+#petalo5{
+width:13%; height:27%; top:1%; left:41%;
+background:linear-gradient(to top,red,orange,yellow);
+border-radius:50%;
+animation:pe5 3.7s;
+}
+
+#petalo6{
+width:13%; height:27%; top:30%; left:41%;
+background:linear-gradient(to top,yellow,orange,red);
+border-radius:50%;
+animation:pe6 5.7s;
+}
+
 #petalo7{
-	width: 24%;
-	height: 12%;
-	background: linear-gradient(to left, red, orange, yellow);
-	position: absolute;
-	top: 25%;
-	left: 25%;
-	border-top-right-radius: 150%;
-	border-top-left-radius: 150%;
-	border-bottom-left-radius:150%;
-	border-bottom-right-radius: 150%;
-	z-index: 1;
-	animation-name: pe7;
-		animation-duration: 6.70s;
+width:24%; height:12%; top:25%; left:25%;
+background:linear-gradient(to left,red,orange,yellow);
+border-radius:50%;
+animation:pe7 6.7s;
+}
+
+#petalo8{
+width:24%; height:12%; top:25%; left:47%;
+background:linear-gradient(to left,yellow,orange,red);
+border-radius:50%;
+animation:pe8 4.7s;
 }
 
 #tallo{
-	width: 8%;
-	height: 50%;
-	background: linear-gradient(to top, green,lawngreen );
-	position: absolute;
-	top: 50%;
-	left: 44%;
-	z-index: 1;
-	animation-name: tal;
-	animation-duration: 7s;
+width:8%;
+height:50%;
+background:linear-gradient(to top,green,lawngreen);
+position:absolute;
+top:50%;
+left:44%;
+animation:tal 7s;
 }
 
-@keyframes formar {
-0%{background:  #EAF208;}
-10%{background: #FFB800;}
-20%{background: #EAF208;}
-30%{background: #FFB800;}
-40%{background: #EAF208;}
-50%{background: #FFB800;}
-60%{background: #EAF208;}
-70%{background: #FFB800;}
-80%{background: #EAF208;}
-90%{background: #FFB800;}
-100%{background:#EAF208;}
+/* ANIMACIONES */
+
+@keyframes formar{
+0%,20%,40%,60%,80%,100%{background:#EAF208;}
+10%,30%,50%,70%,90%{background:#FFB800;}
 }
 
-@keyframes tal{
-
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes cen{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe1{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe2{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe3{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe4{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe5{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe6{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe7{
-	0%{background:transparent;}
-	100%{ }
-}
-@keyframes pe8{
-	0%{background:transparent;}
-	100%{ }
+@keyframes extra{
+    0%{
+        transform:rotate(0deg);
+        background:transparent;
+    }
+    100%{
+        transform:rotate(360deg);
+        background:linear-gradient(to top, yellow, orange, red, orange, yellow);
+    }
 }
 
+@keyframes extra2{
+    0%{
+        transform:rotate(0deg);
+        background:transparent;
+    }
+    100%{
+        transform:rotate(360deg);
+        background:linear-gradient(to top, yellow, orange, red, orange, yellow);
+    }
+}
+
+@keyframes tal{0%{background:transparent;}}
+@keyframes cen{0%{background:transparent;}}
+@keyframes pe1{0%{background:transparent;}}
+@keyframes pe2{0%{background:transparent;}}
+@keyframes pe3{0%{background:transparent;}}
+@keyframes pe4{0%{background:transparent;}}
+@keyframes pe5{0%{background:transparent;}}
+@keyframes pe6{0%{background:transparent;}}
+@keyframes pe7{0%{background:transparent;}}
+@keyframes pe8{0%{background:transparent;}}
+
+/*ABEJA */
 @keyframes volar{
-	0%{left: 20px;top: 50px;}
-	25%{left: 700px;top: 50px}
-	50%{left: 700px;top: 600px;}
-	100%{left: 20px;top: 50px}
+0%{left:-100px; top:120px;}
+25%{left:260px; top:130px;}
+50%{left:420px; top:260px;}
+75%{left:260px; top:360px;}
+100%{left:-100px; top:120px;}
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+
+main{
+    flex-direction:column;
+}
+
+#todo{
+    order:1;
+    min-height:700px;
+}
+
+#lo{
+    order:2;
+    font-size:18px;
+    padding:20px;
+}
+
+#conteiner7{
+    left:50%;
+    top:42%;
+    margin-left:-150px;
+    margin-top:-120px;
+    transform:scale(1.2);
+    transform-origin:top left;
+}
+
+#conteiner4,#conteiner5,#conteiner6{
+    display:none;
+}
+
+#abeja{
+    width:70px;
+}
 }
