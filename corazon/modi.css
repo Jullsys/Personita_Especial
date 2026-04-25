@@ -1,0 +1,66 @@
+body{
+	margin: 10px;
+	background-image: url(https://i.pinimg.com/736x/4b/13/2b/4b132b17499c63221b129d5e9da2823d.jpg);
+	height: 1000px;
+}
+h3{
+	font-family: fantasy;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+background: linear-gradient(to top, hotpink, pink, lightpink);
+width: 20%;
+margin-left: 45%;
+margin-top: 50px;
+position: fixed;
+}
+
+#par{
+	background: pink;
+	font-family: cursive;
+	text-align: justify;
+	font-size: 20px;
+position: fixed;
+margin-top: 100px;
+}
+
+#si{
+	background: lightyellow;
+	font-family: serif;
+	font-size: 35px;
+position: fixed;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+}
+#b1{
+	margin-left: 35%;
+}
+#b2{
+	margin-left: 70%;
+}
+#Rec{
+		background: lightyellow;
+	font-family: serif;
+	font-size: 35px;
+position: fixed;
+margin-top: 10px;
+margin-left:1000px;
+border-radius: 10px;
+}
+video{
+	margin-left: 300px;
+	border-radius: 10px;
+}
+img{
+	width: 325px;
+	height: 500px ;
+}
+#fot{
+	margin-left: 500px;
+}
+p{
+	text-align: justify-all;
+	background: lightpink;
+	font-family: cursive;
+}

@@ -1,0 +1,341 @@
+#lo{
+background: linear-gradient(to left, red, orange, salmon);
+margin-left: 1000px;
+position: absolute;
+width: 340px;
+height: 960px;
+font-family: cursive;
+font-size: 30px;
+text-align: justify;
+}
+#abeja{
+	position: absolute;
+	animation-name: volar;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+#conteiner{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-top: 590px;
+}
+#conteiner2{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-left:15%;
+	margin-top: 590px;
+}
+#conteiner3{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-left:30%;
+	margin-top: 590px;
+}
+#conteiner4{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-left:50%;
+	margin-top: 590px;
+}
+#conteiner5{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-left:64%;
+	margin-top: 590px;
+}
+#conteiner6{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	margin-left:82%;
+	margin-top: 590px;
+}
+#todo{
+	background: linear-gradient(to top, blue, skyblue);
+	position: absolute;
+	width: 1000px;
+	height: 960px;
+}
+#sol{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	animation-name: formar;
+	animation-duration: 10s;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	animation-iteration-count: infinite;
+}
+#extra{
+	width: 15%;
+	height: 50%;
+	position: absolute;
+	top: 6%;
+	left: 40%;
+	border-top-right-radius: 130%;
+	border-top-left-radius: 130%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	animation-name: extra;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+@keyframes extra{
+from{
+	transform: rotate(0deg);
+}to{
+	transform: rotate(360deg);
+}
+0%{
+	background: transparent;
+}
+100%{
+	background: linear-gradient(to top, yellow, orange, red, orange,yellow);
+}
+}
+#extra2{
+	width: 15%;
+	height: 50%;
+	position: absolute;
+	top: 6%;
+	left: 40%;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	animation-name: extra2;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-direction: reverse;
+animation-delay: 2s;
+}
+@keyframes extra2{
+	from{transform: rotate(0deg);}
+to{transform: rotate(360deg); }
+0%{
+	background: transparent;
+}
+100%{
+	background: linear-gradient(to top, yellow, orange, red, orange,yellow);
+}
+}
+
+#centro{
+	background: brown;
+	width: 13%;
+	height: 13%;
+	top: 23%;
+	left: 41%;
+	position: absolute;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	z-index: 1;
+	animation-name: cen;
+	animation-duration: 2s;
+}
+#petalo1{
+	width: 27%;
+	height: 15%;
+	background: linear-gradient(to top, red, orange, yellow);
+	position: absolute;
+	top: 14%;
+	left: 22%;
+	border-top-right-radius: 130%;
+	border-top-left-radius: 40%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 15%;
+	z-index: 1;
+	animation-name: pe1;
+	animation-duration: 3s;
+}
+#petalo5{
+	width: 13%;
+	height: 27%;
+	background:linear-gradient(to top, red, orange, yellow);
+	position: absolute;
+	top: 1%;
+	left: 41%;
+	border-top-right-radius: 150%;
+	border-top-left-radius: 150%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	z-index: 1;
+	animation-name: pe5;
+		animation-duration: 3.70s;
+	}
+#petalo2{
+	width: 27%;
+	height: 15%;
+	background: linear-gradient(to top, red, orange, yellow);
+	position: absolute;
+	top: 14%;
+	left: 45%;
+	border-top-right-radius: 40%;
+	border-top-left-radius: 130%;
+	border-bottom-left-radius:15%;
+	border-bottom-right-radius: 150%;
+	z-index: 1;
+	animation-name: pe2;
+	animation-duration: 4s;
+}
+#petalo8{
+	width: 24%;
+	height: 12%;
+	background: linear-gradient(to left, yellow, orange, red );
+	position: absolute;
+	top: 25%;
+	left: 47%;
+	border-top-right-radius: 150%;
+	border-top-left-radius: 150%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	z-index: 1;
+	animation-name: pe8;
+	animation-duration: 4.70s;
+}
+#petalo3{
+	width: 27%;
+	height: 15%;
+	background:linear-gradient(to top, yellow, orange, red);
+	position: absolute;
+	top: 31%;
+	left: 45%;
+	border-top-right-radius: 130%;
+	border-top-left-radius: 35%;
+	border-bottom-left-radius:130%;
+	border-bottom-right-radius: 20%;
+	z-index: 1;animation-name: pe3;
+		animation-duration: 5s;
+}
+#petalo6{
+	width: 13%;
+	height: 27%;
+	background: linear-gradient(to top, yellow, orange, red);
+	position: absolute;
+	top: 30%;
+	left: 41%;
+	border-top-right-radius: 150%;
+	border-top-left-radius: 150%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	z-index: 1;
+	animation-name: pe6;
+		animation-duration: 5.70s;
+}
+#petalo4{
+	width: 27%;
+	height: 15%;
+	background:linear-gradient(to top, yellow, orange, red);
+	position: absolute;
+	top: 31%;
+	left: 22%;
+	border-top-right-radius: 35%;
+	border-top-left-radius: 130%;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius: 130%;
+	z-index: 1;
+	animation-name: pe4;
+	animation-duration: 6s;
+}
+#petalo7{
+	width: 24%;
+	height: 12%;
+	background: linear-gradient(to left, red, orange, yellow);
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	border-top-right-radius: 150%;
+	border-top-left-radius: 150%;
+	border-bottom-left-radius:150%;
+	border-bottom-right-radius: 150%;
+	z-index: 1;
+	animation-name: pe7;
+		animation-duration: 6.70s;
+}
+
+#tallo{
+	width: 8%;
+	height: 50%;
+	background: linear-gradient(to top, green,lawngreen );
+	position: absolute;
+	top: 50%;
+	left: 44%;
+	z-index: 1;
+	animation-name: tal;
+	animation-duration: 7s;
+}
+
+@keyframes formar {
+0%{background:  #EAF208;}
+10%{background: #FFB800;}
+20%{background: #EAF208;}
+30%{background: #FFB800;}
+40%{background: #EAF208;}
+50%{background: #FFB800;}
+60%{background: #EAF208;}
+70%{background: #FFB800;}
+80%{background: #EAF208;}
+90%{background: #FFB800;}
+100%{background:#EAF208;}
+}
+
+@keyframes tal{
+
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes cen{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe1{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe2{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe3{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe4{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe5{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe6{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe7{
+	0%{background:transparent;}
+	100%{ }
+}
+@keyframes pe8{
+	0%{background:transparent;}
+	100%{ }
+}
+
+@keyframes volar{
+	0%{left: 20px;top: 50px;}
+	25%{left: 700px;top: 50px}
+	50%{left: 700px;top: 600px;}
+	100%{left: 20px;top: 50px}
+}
